@@ -24,7 +24,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        if (isDeluxe) return;
+       // if (isDeluxe) return;
         if (!cheeseAdded) {
             this.price += 80;
             this.bill += "Extra Cheese Added: 80\n";
@@ -34,7 +34,7 @@ public class Pizza {
 
     public void addExtraToppings(){
         // your code goes here
-        if (isDeluxe) return;
+      //  if (isDeluxe) return;
         if (!toppingsAdded) {
             this.price += 70;
             this.bill += "Extra Toppings Added: 70\n";
