@@ -15,7 +15,7 @@ public class Pizza {
         
         this.isVeg = isVeg;
         this.price = 300;
-        this.bill = "Base Price Of The Pizza: 300 \n";
+        this.bill = "Base Price Of The Pizza: 300\n";
         // your code goes here
     }
     public int getPrice(){
@@ -46,7 +46,7 @@ public class Pizza {
         // your code goes here
         if (!takeawayAdded) {
             this.price += 20;
-            this.bill += "Paperbag Added: 20 \n";
+            this.bill += "Paperbag Added: 20\n";
             takeawayAdded = true;
         }
     }
