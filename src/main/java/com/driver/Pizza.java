@@ -60,7 +60,7 @@ public class Pizza {
     public String getBill(){
         // your code goes here
        StringBuilder str = new StringBuilder();
-    str.append("Base Price Of The Pizza: " + initialBasePrice + "\n");
+    str.append(this.bill);
     if (cheeseAdded) str.append("Extra Cheese Added: 80\n");
     if (toppingsAdded) str.append("Extra Toppings Added: 70\n");
     if (takeawayAdded) str.append("Paperbag Added: 20\n");
