@@ -24,7 +24,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        if (isDeluxe) return;
+        //if (isDeluxe) return;
         if (!cheeseAdded) {
             this.price += 80;
             //this.bill += "Extra Cheese Added: 80\n";
