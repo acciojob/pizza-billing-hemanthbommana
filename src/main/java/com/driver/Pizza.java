@@ -32,12 +32,9 @@ public class Pizza {
         }
     }
 
-    public void addExtraToppings(){
-        // your code goes here
-      //  if (isDeluxe) return;
+    public void addExtraToppings() {
         if (!toppingsAdded) {
-            this.price += 70;
-            //this.bill += "Extra Toppings Added: 70\n";
+            this.price += (isDeluxe ? 120 : 70);
             toppingsAdded = true;
         }
     }
@@ -62,7 +59,7 @@ public class Pizza {
        StringBuilder str = new StringBuilder();
     str.append(this.bill);
     if (cheeseAdded) str.append("Extra Cheese Added: 80\n");
-    if (toppingsAdded) str.append("Extra Toppings Added: 70\n");
+    if (toppingsAdded) str.append("Extra Toppings Added: "+(isDeluxe ? 120 : 70)+"\n");
     if (takeawayAdded) str.append("Paperbag Added: 20\n");
     str.append("Total Price: " + this.price + "\n");
     return str.toString();
