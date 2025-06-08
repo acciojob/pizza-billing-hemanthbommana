@@ -27,7 +27,7 @@ public class Pizza {
        // if (isDeluxe) return;
         if (!cheeseAdded) {
             this.price += 80;
-            this.bill += "Extra Cheese Added: 80\n";
+            //this.bill += "Extra Cheese Added: 80\n";
             cheeseAdded = true;
         }
     }
@@ -37,7 +37,7 @@ public class Pizza {
       //  if (isDeluxe) return;
         if (!toppingsAdded) {
             this.price += 70;
-            this.bill += "Extra Toppings Added: 70\n";
+            //this.bill += "Extra Toppings Added: 70\n";
             toppingsAdded = true;
         }
     }
@@ -46,7 +46,7 @@ public class Pizza {
         // your code goes here
         if (!takeawayAdded) {
             this.price += 20;
-            this.bill += "Paperbag Added: 20\n";
+           // this.bill += "Paperbag Added: 20\n";
             takeawayAdded = true;
         }
     }
@@ -59,7 +59,17 @@ public class Pizza {
     }
     public String getBill(){
         // your code goes here
-        
+        StringBuilder str = new StringBuilder();
+        if(cheeseAdded){
+            str.append("Extra Cheese Added: 80\n");
+        }
+        if(toppingsAdded){
+            str.append("Extra Toppings Added: 70\n");
+        }
+        if(takeawayAdded){
+            str.append("Paperbag Added: 20\n");
+        }
+        this.bill += str.toString();
         return this.bill+ "Total Price: "+this.price;
     }
 }
