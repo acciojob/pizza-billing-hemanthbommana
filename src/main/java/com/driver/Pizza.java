@@ -14,7 +14,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         
         this.isVeg = isVeg;
-        this.price = 300;
+       this.price = isVeg ? 300 : 400;
         this.bill = "Base Price Of The Pizza: 300\n";
         // your code goes here
     }
