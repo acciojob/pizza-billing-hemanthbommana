@@ -59,17 +59,12 @@ public class Pizza {
     }
     public String getBill(){
         // your code goes here
-        StringBuilder str = new StringBuilder();
-        if(cheeseAdded){
-            str.append("Extra Cheese Added: 80\n");
-        }
-        if(toppingsAdded){
-            str.append("Extra Toppings Added: 70\n");
-        }
-        if(takeawayAdded){
-            str.append("Paperbag Added: 20\n");
-        }
-        this.bill += str.toString();
-        return this.bill+ "Total Price: "+this.price+"\n";
+       StringBuilder str = new StringBuilder();
+    str.append("Base Price Of The Pizza: " + initialBasePrice + "\n");
+    if (cheeseAdded) str.append("Extra Cheese Added: 80\n");
+    if (toppingsAdded) str.append("Extra Toppings Added: 70\n");
+    if (takeawayAdded) str.append("Paperbag Added: 20\n");
+    str.append("Total Price: " + this.price + "\n");
+    return str.toString();
     }
 }
