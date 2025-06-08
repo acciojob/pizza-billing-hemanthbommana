@@ -8,7 +8,7 @@ public class DeluxePizza extends Pizza {
         super(isVeg);
         this.isDeluxe = true;
         setPrice(400);
-        setBill("Base Price Of The Pizza: 400\n");
+        setBill("Base Price Of The Pizza: " + (isVeg ? 300 : 400) + "\n");
         super.addExtraCheese();
         super.addExtraToppings();
         // your code goes here
