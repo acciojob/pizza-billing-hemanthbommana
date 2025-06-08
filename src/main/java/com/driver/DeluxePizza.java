@@ -12,12 +12,12 @@ public class DeluxePizza extends Pizza {
        //  super.addExtraCheese();
        //  super.addExtraToppings();
         // your code goes here
-         super(isVeg);
-        this.isDeluxe = true;
-        //setPrice(isVeg ? 300 : 400);
-        setBill("Base Price Of The Pizza: " + (isVeg ? 300 : 400) + "\n");
-        super.addExtraCheese();
-        super.addExtraToppings();
+        super(isVeg);
+        this.isDeluxe = true;  // mark as deluxe
+
+        // Additional deluxe features:
+        super.addExtraCheese();    // +80
+        super.addExtraToppings();  // +120 (because isDeluxe is true)
 
     }
 }
