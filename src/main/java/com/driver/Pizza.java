@@ -12,11 +12,9 @@ public class Pizza {
     private boolean takeawayAdded = false;
 
     public Pizza(Boolean isVeg){
-        
         this.isVeg = isVeg;
-       this.price = isVeg ? 300 : 400;
-        this.bill = "Base Price Of The Pizza: 300\n";
-        // your code goes here
+        this.price = isVeg ? 300 : 400;
+        this.bill = "Base Price Of The Pizza: " + this.price + "\n";
     }
     public int getPrice(){
         return this.price;
